@@ -4,3 +4,6 @@
 Gemfile.lock
 pkg/*
 test/dummy_gem/test/dummy
+.ruby-version
+.ruby-gemset
+
