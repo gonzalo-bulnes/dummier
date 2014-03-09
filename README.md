@@ -1,4 +1,4 @@
-# Dummier [![Build Status](https://secure.travis-ci.org/citrus/dummier.png)](http://travis-ci.org/citrus/dummier)
+# Dummier [![Build Status](https://secure.travis-ci.org/gonzalo-bulnes/dummier.png)](http://travis-ci.org/gonzalo-bulnes/dummier)
 
 A smart gem with a dumb name; Dummier is a rails generator for automating the creation of rails testing applications.
 
