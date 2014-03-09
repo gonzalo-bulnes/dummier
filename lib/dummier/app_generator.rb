@@ -117,7 +117,7 @@ module Dummier
 
       # Removes unnecessary files from test/dummy
       def remove_unnecessary_files
-        files = %w(public/index.html public/images/rails.png Gemfile README doc test vendor)
+        files = %w(public/index.html public/images/rails.png README doc test vendor)
         files.each do |file|
           say_status "delete", file
           FileUtils.rm_r(file) if File.exists?(file)

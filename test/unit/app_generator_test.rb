@@ -42,9 +42,15 @@ class AppGeneratorTest < MiniTest::Should::TestCase
         assert File.exists?(@dummy), "test/dummy should exist at #{@dummy}"
 
         # should remove unnecessary files
-        files = %w(public/index.html public/images/rails.png Gemfile README doc test vendor)
+        files = %w(public/index.html public/images/rails.png README doc test vendor)
         files.each do |file|
           assert !File.exists?(file), "#{file} should have been deleted"
+        end
+
+        # should not remove unnecessary files
+        files = %w(Gemfile)
+        files.each do |file|
+          assert File.exists?(file), "#{file} should not have been deleted"
         end
 
         # should apply application template
